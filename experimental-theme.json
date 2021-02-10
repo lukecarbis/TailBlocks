@@ -1,0 +1,200 @@
+{
+  "settings": {
+    "defaults": {
+      "color": {
+        "palette": [
+          {
+            "slug": "white",
+            "color": "#fff",
+            "name": "White"
+          },
+          {
+            "slug": "light-gray",
+            "color": "#F3F4F6",
+            "name": "Light Gray"
+          },
+          {
+            "slug": "gray",
+            "color": "#D1D5DB",
+            "name": "Gray"
+          },
+          {
+            "slug": "dark-gray",
+            "color": "#4B5563",
+            "name": "Dark Gray"
+          },
+          {
+            "slug": "black",
+            "color": "#000",
+            "name": "Black"
+          },
+          {
+            "slug": "red",
+            "color": "#DC2626",
+            "name": "Red"
+          },
+          {
+            "slug": "yellow",
+            "color": "#D97706",
+            "name": "Yellow"
+          },
+          {
+            "slug": "green",
+            "color": "#059669",
+            "name": "Green"
+          },
+          {
+            "slug": "blue",
+            "color": "#2563EB",
+            "name": "Blue"
+          },
+          {
+            "slug": "indigo",
+            "color": "#4F46E5",
+            "name": "Indigo"
+          },
+          {
+            "slug": "purple",
+            "color": "#7C3AED",
+            "name": "Purple"
+          },
+          {
+            "slug": "pink",
+            "color": "#DB2777",
+            "name": "Pink"
+          }
+        ]
+      },
+      "typography": {
+        "customLineHeight": true,
+        "fontSizes": [
+          {
+            "slug": "text-xs",
+            "size": "0.75rem",
+            "name": "Extra small"
+          },
+          {
+            "slug": "text-sm",
+            "size": "0.875rem",
+            "name": "Small"
+          },
+          {
+            "slug": "text-base",
+            "size": "1rem",
+            "name": "Normal"
+          },
+          {
+            "slug": "text-lg",
+            "size": "1.125rem",
+            "name": "Large"
+          },
+          {
+            "slug": "text-2xl",
+            "size": "1.5rem",
+            "name": "Extra large"
+          },
+          {
+            "slug": "text-4xl",
+            "size": "2.25rem",
+            "name": "Huge"
+          },
+          {
+            "slug": "text-9xl",
+            "size": "8rem",
+            "name": "Gigantic"
+          }
+        ],
+        "fontWeights": [
+          {
+            "slug": "font-thin",
+            "value": 100,
+            "name": "Thin"
+          },
+          {
+            "slug": "font-extralight",
+            "value": 200,
+            "name": "Extra Light"
+          },
+          {
+            "slug": "font-light",
+            "value": 300,
+            "name": "Light"
+          },
+          {
+            "slug": "font-normal",
+            "value": 400,
+            "name": "Normal"
+          },
+          {
+            "slug": "font-medium",
+            "value": 500,
+            "name": "Medium"
+          },
+          {
+            "slug": "font-semibold",
+            "value": 600,
+            "name": "Semibold"
+          },
+          {
+            "slug": "font-bold",
+            "value": 700,
+            "name": "Bold"
+          },
+          {
+            "slug": "font-extrabold",
+            "value": 800,
+            "name": "Extra Bold"
+          },
+          {
+            "slug": "font-black",
+            "value": 900,
+            "name": "Black"
+          }
+        ],
+        "fontStyles": [
+          {
+            "slug": "not-italic",
+            "value": "normal",
+            "name": "Normal"
+          },
+          {
+            "slug": "italic",
+            "value": "italic",
+            "name": "Italic"
+          }
+        ],
+        "fontFamilies": [
+          {
+            "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+            "slug": "font-sans",
+            "name": "Sans-serif"
+          },
+          {
+            "fontFamily": "ui-serif, Georgia, Cambria, \"Times New Roman\", Times, serif",
+            "slug": "font-serif",
+            "name": "Serif"
+          },
+          {
+            "fontFamily": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, \"Liberation Mono\", \"Courier New\", monospace",
+            "slug": "font-mono",
+            "name": "Monospaced"
+          }
+        ]
+      }
+    }
+  },
+  "styles": {
+    "root": {
+      "color": {
+        "background": "var(--wp--preset--color--white)",
+        "text": "var(--wp--preset--color--black)",
+        "link": "var(--wp--preset--color--blue)"
+      },
+      "typography": {
+        "fontFamily": "ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";",
+        "fontSize": "1rem",
+        "lineHeight": "1.5"
+      }
+    }
+  }
+}

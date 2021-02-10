@@ -1,0 +1,29 @@
+# Builds
+style.css
+
+# OS generated files
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+._*
+
+# NPM
+.npmignore
+node_modules
+
+# Always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.vi
+*.swp
+*.tmp
+*.bak
+*.map
+
+# ack
+.ackrc

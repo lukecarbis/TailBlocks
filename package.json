@@ -1,0 +1,20 @@
+{
+  "name": "tailblocks",
+  "version": "1.0.0",
+  "description": "TailBlocks is an experimental WordPress theme combining Full-Site Editing (currently available in Gutenberg) and Tailwind CSS.",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.5",
+    "postcss-import": "^14.0.0",
+    "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss global.css --use autoprefixer -o style.css",
+    "dev": "postcss global.css --use autoprefixer -o style.css --watch"
+  },
+  "author": "Luke Carbis",
+  "license": "GPL-2.0-or-later"
+}

@@ -1,0 +1,236 @@
+/*
+Theme Name: TailBlocks
+Version: 1.0
+Requires PHP: 7.0
+Requires at least: 5.6
+Tested up to: 5.6
+Description: Experimental Full Site Editing Theme
+Author: Luke Carbis
+Author URI: https://wpengine.com/
+Theme URI: https://wpengine.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, featured-images, full-site-editing, one-column
+Text Domain: tailblocks
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================================================================== */
+/* Tailblock Theme Styles                                                 */
+/* ====================================================================== */
+
+/*
+Global
+ */
+
+img {
+  @apply max-w-max h-auto;
+}
+
+.aligncenter {
+  @apply text-center;
+}
+
+.alignleft {
+  @apply float-left;
+}
+
+.alignright {
+  @apply float-right;
+}
+
+/* Screen Reader Text */
+.screen-reader-text {
+  @apply sr-only;
+}
+
+/*
+Template Parts
+ */
+
+/* Header */
+.site-header {
+  border-color: var(--wp--preset--color--gray);
+}
+
+.editor-styles-wrapper h1.wp-block-site-title,
+.wp-block-site-title {
+  @apply m-0;
+}
+
+.wp-block-site-title a {
+  @apply no-underline;
+}
+
+.editor-styles-wrapper p.wp-block-site-tagline,
+.wp-block-site-tagline {
+  @apply m-0 font-bold;
+}
+
+/* == Navigation === */
+
+/* By default the navigation template part has a top and bottom border. */
+.wp-block-navigation {
+  @apply border-t border-b;
+  border-color: var(--wp--preset--color--gray);
+}
+
+/* If the navigation template part comes immediately after the header, we do not need the top border. */
+.site-header + .wp-block-navigation {
+  @apply border-t-0;
+}
+
+/* Generic styles */
+
+/* All links. */
+
+.wp-block-navigation-link__content {
+  @apply font-bold py-5 px-7 no-underline break-words;
+  color: var(--wp--preset--color--black);
+}
+
+.wp-block-navigation-link__content:hover {
+  color: var(--wp--preset--color--blue);
+}
+
+/* First level */
+.wp-block-navigation > .wp-block-navigation__container > li {
+  @apply my-3.5;
+}
+
+.wp-block-navigation-link__submenu-icon {
+  color: var(--wp--preset--color--gray);
+}
+
+/* Second level and more */
+.wp-block-navigation ul ul li:first-child {
+  @apply border-none;
+}
+.wp-block-navigation ul ul li {
+  @apply m-0 border-t;
+  border-color: var(--wp--preset--color--gray);
+}
+
+/*
+Footer
+ */
+.site-footer {
+  border-color: var(--wp--preset--color--gray);
+  color: var(--wp--preset--color--gray);
+}
+
+.site-footer .block-editor-block-list__block {
+  @apply m-0;
+}
+
+/*--------------------------------------------------------------
+Content
+--------------------------------------------------------------*/
+
+/* == Post Title ==== */
+
+.wp-block-post-title a {
+  @apply no-underline;
+  color: var(--wp--preset--color--black);
+}
+
+.wp-block-post-title a:hover {
+  color: var(--wp--preset--color--blue);
+}
+
+/* === Content ==== */
+
+.entry-content h1 {
+  @apply mb-7;
+}
+
+.entry-content h2 {
+  @apply mb-6;
+}
+
+.entry-content h3 {
+  @apply mb-5;
+}
+
+.entry-content h4 {
+  @apply mb-4;
+}
+
+.entry-content h5 {
+  @apply mb-4 text-base italic font-bold;
+}
+
+.entry-content h6 {
+  @apply mb-4 text-base italic font-normal;
+}
+
+/* === Entry Footer == */
+.entry-footer {
+  border-color: var(--wp--preset--color--gray);
+  color: var(--wp--preset--color--gray);
+}
+
+.entry-footer.wp-block {
+  @apply max-w-screen-md;
+}
+
+.entry-footer .wp-block-group__inner-container {
+  @apply flex;
+}
+
+/* Gutenberg doesn't offer <span> tags, so the meta is in paragraphs. We need to override these styles */
+.editor-styles-wrapper .entry-footer p,
+.entry-footer p {
+  @apply m-0;
+}
+
+/* Put a spacer between the "Posted on" text, and the post date. */
+.entry-footer .wp-block-post-date {
+  @apply ml-1;
+}
+
+/* Remove the extra space around the post author block */
+.editor-styles-wrapper .entry-footer .wp-block-post-author {
+  @apply m-0;
+}
+
+/* The post author byline and name are wrapped in paragraph tags, but the design wants them on a single line. */
+.wp-block-post-author__content {
+  @apply flex;
+}
+
+/* Add the dot separator before the post author. */
+.wp-block-post-author__content::before {
+  @apply mx-2;
+}
+
+/* Put a spacer between the "By" text, and the author name. */
+.editor-styles-wrapper p.wp-block-post-author__name,
+p.wp-block-post-author__name {
+  @apply ml-1;
+}
+
+/*
+Templates
+ */
+
+/* == Archives === */
+.posts-navigation .wp-block-group__inner-container div {
+  @apply flex-grow;
+}
+
+.posts-navigation .wp-block-group__inner-container div:nth-child(2) {
+  @apply text-right;
+}
+
+/*
+These classes are only here to pass the Theme Check on WordPress.org.
+*/
+.bypostauthor,
+.gallery-caption,
+.sticky,
+.wp-caption,
+.wp-caption-text {}
