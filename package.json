@@ -12,8 +12,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "postcss global.css --use autoprefixer -o style.css",
-    "dev": "postcss global.css --use autoprefixer -o style.css --watch"
+    "build": "postcss global.css -o style.css",
+    "dev": "postcss global.css -o style.css --watch"
   },
   "author": "Luke Carbis",
   "license": "GPL-2.0-or-later"
